@@ -52,7 +52,7 @@ export const FieldSettings = (view: View): string => {
     view.mount(fieldList, getFields(), false)
   })
   
-  return `${Header(view, 'Field Settings')}
+  return `${Header(view, 'Field Settings (21w05a)')}
     <div class="settings">
       <p>${locale('settings.fields.description')}</p>
       <ul class="field-list" data-id="${fieldListId}"></ul>

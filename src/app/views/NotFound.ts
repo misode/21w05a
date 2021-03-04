@@ -5,7 +5,7 @@ import { GeneratorCard } from './Home'
 
 export const NotFound = (view: View): string => {  
   return `
-    ${Header(view, 'Data Pack Generators')}
+    ${Header(view, 'Data Pack Generators (21w05a)')}
     <div class="home center">
       <h2 class="very-large">404</h2>
       <p>${locale('not_found.description')}</p>

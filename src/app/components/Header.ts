@@ -34,7 +34,7 @@ export const Header = (view: View, title: string, homeLink = '/') => {
   
   return `<header>
     <div class="header-title">
-      <a data-link href="${homeLink}" class="home-link" aria-label="${locale('home')}">${Octicon.three_bars}</a>
+      <a data-link href="/21w05a${homeLink}" class="home-link" aria-label="${locale('home')}">${Octicon.three_bars}</a>
       <h2>${title}</h2>
     </div>
     <nav>
@@ -43,7 +43,7 @@ export const Header = (view: View, title: string, homeLink = '/') => {
         <li>${Dropdown(view, 'globe', languages.map(l => [l.code, l.name]), App.language, Tracker.setLanguage)}</li>
         <li>${Toggle(view, [['dark', 'sun'], ['light', 'moon']], App.theme, Tracker.setTheme)}</li>
         <li>
-          <a data-link href="/settings/fields/" title="${locale('settings')}">
+          <a data-link href="/21w05a/settings/fields/" title="${locale('settings')}">
             ${Octicon.gear}
           </a>
         </li>

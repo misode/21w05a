@@ -12,6 +12,7 @@ const categories = config.models.filter(m => m.category === true)
 
 const router = async () => {
   const urlParts = location.pathname.split('/').filter(e => e)  
+  urlParts.shift()
   const urlParams = new URLSearchParams(location.search)
 
   const target = document.getElementById('app')!

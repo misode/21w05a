@@ -11,7 +11,7 @@ function cleanUrl(url: string) {
 
 export const GeneratorCard = (url: string, name: string, arrow?: boolean, active?: boolean) =>  `
   <li>
-    <a data-link href="${cleanUrl(url)}" class="generators-card${active ? ' selected' : ''}">
+    <a data-link href="/21w05a${cleanUrl(url)}" class="generators-card${active ? ' selected' : ''}">
       ${name}
       ${arrow ? Octicon.chevron_right : ''}
     </a>
@@ -21,7 +21,7 @@ export const GeneratorCard = (url: string, name: string, arrow?: boolean, active
 export const Home = (view: View): string => {  
   const filteredModels = config.models.filter(m => m.category === App.model.get()!.id)
   return `
-    ${Header(view, 'Data Pack Generators')}
+    ${Header(view, 'Data Pack Generators (21w05a)')}
     <div class="home">
       <ul class="generators-list">
         ${config.models

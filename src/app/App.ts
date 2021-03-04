@@ -133,7 +133,7 @@ async function updateSchemas(version: string) {
 
 async function updateLocale(language: string) {
   if (Locales[language] && (hasFetchedEnglish || language !== 'en')) return
-  const data = await (await fetch(`/locales/${language}.json`)).json()
+  const data = await (await fetch(`/21w05a/locales/${language}.json`)).json()
   if (language === 'en') hasFetchedEnglish = true
   Locales[language] = data
 }
